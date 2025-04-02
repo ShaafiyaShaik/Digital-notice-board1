@@ -1,0 +1,13 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f5f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

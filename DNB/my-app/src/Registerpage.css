@@ -1,0 +1,140 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Full Page Centering */
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(108, 152, 210);
+  position: relative;
+}
+
+/* Back Button */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-weight: bolder;
+  cursor: pointer;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* Registration Form Container */
+.register-container {
+  width: 400px;
+  max-width: 90%;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  backdrop-filter: blur(8px);
+}
+
+/* Heading */
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Input Fields */
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: rgba(255, 255, 255, 0.3);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 16px;
+  outline: none;
+}
+
+/* Placeholder Text */
+input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* Eye Icon for Password Toggle */
+.eye-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #0a0a0a;
+}
+
+/* Register Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background: rgba(0, 75, 173, 0.895);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #d8533c;
+}
+
+/* Dropdown Styles */
+select {
+  appearance: none;
+  cursor: pointer;
+}
+
+/* Select Options */
+select option {
+  color: #000;
+  background: #fff;
+}
+
+/* Already have an account link */
+.login-link {
+  display: block;
+  margin-top: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Mobile Optimization */
+@media (max-width: 600px) {
+  .register-container {
+    width: 90%;
+    padding: 30px;
+  }
+}
